@@ -3,12 +3,12 @@ A Chrome-based extension that saves your current session's tabs.
 
 <b>Installation</b>:
 
-1) Download the 'src' directory as a zip.
+1) Download the '<i>src</i>' directory as a zip.
 2) Extract the folder (making sure to keep the heirarchy intact).
 3) Click the three dots on the top-right of your Google Chrome browser.
-4) Hover over 'Extensions' and then click 'Manage Extensions'.
-5) Click 'Load Unpacked' in the top-left of the Extensions page.
-6) Navigate to the freshly unzipped 'src' folder and select it in the folder selector.
+4) Hover over '<i>Extensions</i>' and then click '<i>Manage Extensions</i>'.
+5) Click '<i>Load Unpacked</i>' in the top-left of the Extensions page.
+6) Navigate to the freshly unzipped '<i>src</i>' folder and select it in the folder selector.
 7) Upon successful installation, you will see the popup page for the extension. You can now right-click and save your session's tabs from the context menu. Follow the same process to open them.
 
 <b>NOTE</b>: <i>On Windows, you can use (CTRL + Shift + Home) to save your pages. You can open them using (CTRL + Shift + Insert). Nifty! On Mac, it will be (CTRL + Shift + Z) to save and (CTRL + Shift + X) to open.</i>
