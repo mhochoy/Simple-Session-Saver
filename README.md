@@ -3,7 +3,7 @@ A Chrome-based extension that saves your current session's tabs.
 
 <b>Installation</b>:
 
-1) Download the '<i>src</i>' directory as a zip.
+1) Download/Clone the project.
 2) Extract the folder (making sure to keep the heirarchy intact).
 3) Click the three dots on the top-right of your Google Chrome browser.
 4) Hover over '<i>Extensions</i>' and then click '<i>Manage Extensions</i>'.
