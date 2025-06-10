@@ -4,14 +4,12 @@ function onSessionSaverClick(context) {
     switch(context.menuItemId) {
         case 'save':
           setAllTabs();
-          console.log("Saving tabs...");
           break;
         case 'open':
           openAllTabs();
-          console.log("Opening tabs...")
           break;
         default:
-          console.log("No option for default: Session Saver")
+          break;
     }
 }
 
@@ -59,8 +57,6 @@ chrome.runtime.onInstalled.addListener(() => {
 async function setAllTabs() {
     const window = await chrome.windows.getCurrent({ populate: true });
 
-    console.log(window.tabs);
-
     chrome.storage.local.set({ 
       "savedTabs": window.tabs 
     });
@@ -78,7 +74,7 @@ async function openAllTabs() {
         for (let tab of tabs["savedTabs"]) {
           let open = chrome.tabs.query({"url": tab.url}, function (result) {
             if (result[0] && tab.url === result[0].url) {
-              console.log("This tab is already open");
+              SendNotification("Note", "Skipped an already open page.")
             }
             else {
               chrome.tabs.create({
@@ -90,18 +86,20 @@ async function openAllTabs() {
     }
     catch (e) {
         if (e instanceof TypeError) {
-          console.log("There are no saved tabs to open: ", e);
-
-          chrome.notifications.create('notabs', 
-            {'title': "Error!", 
-              'message': "There are no saved tabs to open",
-              'type': "basic",
-              'iconUrl': "img/64x64.png"},
-            function () {});
+          SendNotification("Error!", "There are no saved tabs to open.")
         }
         else {
           console.log(e);
         }
     }
     
+}
+
+function SendNotification(title, message) {
+  chrome.notifications.create('sessionsaver', 
+      {'title': title, 
+        'message': message,
+        'type': "basic",
+        'iconUrl': "img/64x64.png"},
+      function () {});
 }
