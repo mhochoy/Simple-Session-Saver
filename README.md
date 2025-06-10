@@ -1,5 +1,5 @@
 # Simple Session Saver
-A Chrome-based extension that saves your current session's tabs.
+A Chrome-based extension that lets you save/open your current session's tabs in a simple and easy way.
 
 <b>Installation</b>:
 
