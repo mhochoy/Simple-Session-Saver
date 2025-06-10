@@ -2,7 +2,7 @@
 A Chrome-based extension that lets you save/open your current session's tabs in a simple and easy way.
 
 <b>Foreword:</b>
-Soon enough this extension will be hosted on Google Chrome/FireFox extension pages, and you will not need to manually install them, unless you are making your own changes. If you can to wait for the upload, then I'd highly recommend doing that. Otherwise, you can follow the steps listed below.
+Soon enough this extension will be hosted on Google Chrome/FireFox extension pages and you will not need to manually install them, unless you are making your own changes. If you can wait for the upload I'd highly recommend doing that. Otherwise, you can follow the steps listed below.
 
 <b>Installation</b>:
 <br>
